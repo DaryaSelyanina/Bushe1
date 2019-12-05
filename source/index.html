@@ -1,0 +1,1505 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=c989f49e-757e-4def-8b34-3b7399dfcffc&lang=ru_RU" type="text/javascript">
+    </script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+      <p class="header-logo">буше</p>
+        <div class="user">
+          <span class="user__initials"><p>СА</p></span>
+          <p class="user__name">Смирняков А.В.</p>
+        </div>
+      </div>
+    </header>
+    <main>
+    <div class="control-panel">
+      <div class="control-panel__wrapper">
+        <p>График подразделения №4</p>
+        <div class="control-wrapper">
+          <select class="unit">
+            <option class="unit__element">Подразделение №1</option>
+            <option class="unit__element">Подразделение №2</option>
+            <option class="unit__element">Подразделение №3</option>
+            <option class="unit__element">Подразделение №4</option>
+            <option class="unit__element">Подразделение №5</option>
+            <option class="unit__element">Подразделение №6</option>
+            <option class="unit__element">Подразделение №7</option>
+            <option class="unit__element">Подразделение №8</option>
+            <option class="unit__element">Подразделение №9</option>
+          </select>
+        <!--заглушка под календарь-->
+          <div class="calendar">
+            <span class="calendar__icon"></span>
+            <p class="calendar__month"><span class="calendar__month--bold">Август</span>, 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <div class="actions-wrapper">
+        <div class="position-vector">
+          <p class="position-vector__name">Должность Я -> А</p>
+        </div>
+        <div class="position">
+          <p class="position-name">Выберите должность</p>
+          <div class="position-wrapper">
+            <p class="position-wrapper__title">Выберите должность</p>
+
+            <input type="checkbox" id="position">
+            <label for="position"><span></span>Проектировщик</label>
+
+            <input type="checkbox" id="admin-room">
+            <label for="admin-room"><span></span>Администратор зала</label>
+
+            <input type="checkbox" id="admin-pc">
+            <label for="admin-pc"><span></span>Администратор ПК</label>
+
+            <input type="checkbox" id="manager">
+            <label for="manager"><span></span>Управляющий залом</label>
+
+            <input type="checkbox" id="baker">
+            <label for="baker"><span></span>Пекарь</label>
+
+            <input type="checkbox" id="cleaning">
+            <label for="cleaning"><span></span>Уборщица</label>
+
+            <input type="checkbox" id="cashier">
+            <label for="cashier"><span></span>Кассир</label>
+
+            <input type="checkbox" id="waiter">
+            <label for="waiter"><span></span>Официант</label>
+
+            <input type="checkbox" id="waiter2">
+            <label for="waiter2"><span></span>Официант</label>
+
+            <input type="checkbox" id="waiter3">
+            <label for="waiter3"><span></span>Официант</label>
+          </div>
+        </div>
+        <div class="actions-control">
+        <button type="button" class="add-person">Сотрудник</button>
+        <button type="button" class="export">Экспорт</button>
+        <button type="button" class="refresh">Обновить</button>
+      </div>
+        <div class="interface-toggle">
+          <span class="interface-toggle__time-interval"></span>
+          <label class="interface-toggle__checkbox"><input type="checkbox"></label>
+          <span class="interface-toggle__hours-interval"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+    <table class="shedule-time">
+        <tr>
+            <td class="cell-name" colspan="2">Номер недели</td>
+            <td class="week-number" colspan="7">29</td>
+            <td class="week-number" colspan="7">30</td>
+            <td class="week-number" colspan="7">31</td>
+            <td class="week-number" colspan="7">32</td>
+            <td class="week-number" colspan="3">33</td>
+            <td rowspan="2"></td>
+          </tr>
+          <tr>
+              <td class="cell-name" colspan="2">Число</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td class="weekends">6</td>
+              <td class="weekends">7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td class="weekends">13</td>
+              <td class="weekends">14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td class="weekends">20</td>
+              <td class="weekends">21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td class="weekends">27</td>
+              <td class="weekends">28</td>
+              <td>29</td>
+              <td>30</td>
+              <td>31</td>
+            </tr>
+            <tr class="line-grey">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>>
+      <tr class="shedule-time-head">
+        <td class="shedule-time-head__name" rowspan="2">Группа 1</td>
+        <td>ч/д</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>48</td>
+      </tr>
+      <tr class="shedule-time-head">
+        <td>ч/н</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>33</td>
+      </tr>
+
+      <tr class="shedule-time-item">
+        <td class="person-info">
+          <div class="person-info__top">
+            <span class="person-info__top-icon"></span>
+            <span class="person-info__top-number">000-6415</span>
+            <p class="person-info__top-position">Мойщица-уборщи..</p>
+          </div>
+          <div class="person-info__bottom">
+            <p class="person-info__bottom-name">Виноградов М.М.</p>
+            <span class="person-info__bottom-compound">стажировка</span>
+          </div>
+        </td>
+        <td class="shedule-time-item">
+          <div class="shedule-time-item__top">с</div>
+          <div class="shedule-time-item__bottom">по</div>
+        </td>
+        <td>
+          <span>9:00</span>
+          <span>18:30</span>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td class="shedule-time__item-saturday">
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td>
+          <div>9:00</div>
+          <div>18:30</div>
+        </td>
+        <td class="shedule-time-item__sum">146</td>
+      </tr>
+      <tr class="shedule-time-item">
+          <td class="person-info">
+            <div class="person-info__top">
+              <span class="person-info__top-icon"></span>
+              <span class="person-info__top-number">000-6415</span>
+              <p class="person-info__top-position">Администратор ПК</p>
+            </div>
+            <div class="person-info__bottom">
+              <p class="person-info__bottom-name">Смирнова А.В.</p>
+              <span class="person-info__bottom-compound"></span>
+            </div>
+          </td>
+          <td>
+            <div>с</div>
+            <div>по</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td class="shedule-time-item__sum">146</td>
+        </tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr class="line-grey">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>>
+        <tr class="shedule-time-head">
+          <td class="shedule-time-head__name" rowspan="2">Группа 2</td>
+          <td>ч/д</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>48</td>
+        </tr>
+        <tr class="shedule-time-head">
+          <td>ч/н</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>33</td>
+        </tr>
+        <tr class="shedule-time-item">
+          <td class="person-info">
+            <div class="person-info__top">
+              <span class="person-info__top-icon"></span>
+              <span class="person-info__top-number">000-6415</span>
+              <p class="person-info__top-position">Мойщица-уборщи..</p>
+            </div>
+            <div class="person-info__bottom">
+              <p class="person-info__bottom-name">Виноградов М.М.</p>
+              <span class="person-info__bottom-compound"></span>
+            </div>
+          </td>
+          <td>
+            <div>с</div>
+            <div>по</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td>
+            <div>9:00</div>
+            <div>18:30</div>
+          </td>
+          <td class="shedule-time-item__sum">146</td>
+        </tr>
+        <tr class="shedule-time-item">
+            <td class="person-info">
+              <div class="person-info__top">
+                <span class="person-info__top-icon"></span>
+                <span class="person-info__top-number">122-9712</span>
+                <p class="person-info__top-position">Администратор ПК</p>
+              </div>
+              <div class="person-info__bottom">
+                <p class="person-info__bottom-name">Смирнова А.В.</p>
+                <span class="person-info__bottom-compound"></span>
+              </div>
+            </td>
+            <td>
+              <div>с</div>
+              <div>по</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td>
+              <div>9:00</div>
+              <div>18:30</div>
+            </td>
+            <td class="shedule-time-item__sum">146</td>
+          </tr>
+          <tr class="shedule-time-item">
+              <td class="person-info">
+                <div class="person-info__top">
+                  <span class="person-info__top-icon"></span>
+                  <span class="person-info__top-number">022-8712</span>
+                  <p class="person-info__top-position">Кондитер-упаков...</p>
+                </div>
+                <div class="person-info__bottom">
+                  <p class="person-info__bottom-name">Константинова М.А.</p>
+                  <span class="person-info__bottom-compound"></span>
+                </div>
+              </td>
+              <td>
+                <div>с</div>
+                <div>по</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td class="cell-vacation">
+                <div>О</div>
+              </td>
+              <td class="cell-vacation">
+                  <div>О</div>
+              </td>
+              <td class="cell-vacation">
+                  <div>О</div>
+              </td>
+              <td class="cell-vacation">
+                  <div>О</div>
+              </td>
+              <td class="cell-vacation">
+                  <div>О</div>
+              </td>
+              <td class="cell-vacation">
+                  <div>О</div>
+              </td>
+              <td class="cell-vacation">
+                  <div>О</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td>
+                <div>9:00</div>
+                <div>18:30</div>
+              </td>
+              <td class="shedule-time-item__sum">146</td>
+            </tr>
+        <tr class="line-grey">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="time-total">
+          <td class="time-total__name" colspan="2">Часов всего</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td>54</td>
+            <td class="time-total__amount">700</td>
+        </tr>
+      </table>
+
+    </div>
+    <div class="popup-add-person">
+        <div class="add-person-cart">
+          <div class="cart-name">
+            <h3 class="cart-name__title">Добавить сотрудников</h3>
+            <span class="cart-name__close"></span>
+          </div>
+          <div class="search-wrapper">
+              <input class="person-search" type="text" placeholder="Имя / Табельный номер">
+              <span class="person-search-icon"></span>
+          </div>
+
+          <div class="part-wrapper">
+            <p>Выберите подразделение</p>
+            <span class="part-wrapper__arrow"></span>
+            <select class="part-list">
+              <option class="part-list__element">Подразделение №1</option>
+              <option class="part-list__element">Подразделение №2</option>
+              <option class="part-list__element">Подразделение №3</option>
+              <option class="part-list__element">Подразделение №4</option>
+              <option class="part-list__element">Подразделение №5</option>
+              <option class="part-list__element">Подразделение №6</option>
+              <option class="part-list__element">Подразделение №7</option>
+              <option class="part-list__element">Подразделение №8</option>
+              <option class="part-list__element">Подразделение №9</option>
+            </select>
+          </div>
+          <div class="list-person">
+            <div class="list-person__wrapper list-person__wrapper-bottom">
+                <input class="list-person__checkbox-input" type="checkbox" id="all-person">
+              <label class="list-person__checkbox" for="all-person"><span class="list-person__checkbox"></span>Все сотрудники</label>
+            </div>
+            <div class="list-person__field">
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person1">
+                  <label class="list-person__text" for="person1">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6415</span><span> — </span>Виноградов К.В.</label>
+                </div>
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person2">
+                  <label class="list-person__text" for="person2">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6413</span><span> — </span>Васильев А.И.</label>
+                </div>
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person3">
+                  <label class="list-person__text" for="person3">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6412</span>
+                    <span> — </span>Тришкина А.Л.</label>
+                </div>
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person4">
+                  <label class="list-person__text" for="person4">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6411</span><span> — </span>Гуляев П.В.</label>
+                </div>
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person5">
+                  <label class="list-person__text" for="person5">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6410</span><span> — </span>Кнабенгоф И.И.</label>
+                </div>
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person6">
+                  <label class="list-person__text" for="person6">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6409</span><span> — </span>Горшенев А.А.</label>
+                </div>
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person7">
+                  <label class="list-person__text" for="person7">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6408</span><span> — </span>Горшенев М.А.</label>
+                </div>
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person8">
+                  <label class="list-person__text" for="person8">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6407</span><span> — </span>Кипелов В.А.</label>
+                </div>
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person9">
+                  <label class="list-person__text" for="person9">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6406</span><span> — </span>Самойлов Г.И.</label>
+                </div>
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person10">
+                  <label class="list-person__text" for="person10">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6405</span><span> — </span>Самойлов В.И.</label>
+                </div>
+                <div class="list-person__wrapper">
+                  <input class="list-person__checkbox-input" type="checkbox" id="person11">
+                  <label class="list-person__text" for="person11">
+                    <span class="list-person__checkbox"></span>
+                    <span>000-6404</span><span> — </span>Иванов А.А.</label>
+                </div>
+            </div>
+          </div>
+          <div class="cart-button">
+            <button class="btn" type="button"><p>Отменить</p></button>
+            <button class="btn btn--orange" type="button"><p>Добавить</p></button>
+          </div>
+        </div>
+    </div>
+    <div class="timesheet-download">
+      <div class="timesheet-popup">
+        <div class="timesheet-popup-header">
+          <h3>Выгрузить табель</h3>
+          <span></span>
+        </div>
+        <div class="timesheet-popup-params">
+          <div class="timesheet-popup-params__type">
+            <p>Выберите тип</p>
+            <ul class="timesheet-popup-params__list">
+              <li>Выберите тип <span></span></li>
+              <li>.xlsx — по часам работы</li>
+              <li>.xlsx — по времени работы</li>
+              <li>.xlsx — для расчёта бонусов</li>
+            </ul>
+          </div>
+          <div class="timesheet-popup-params__month">
+            <div>
+                <p class="timesheet-popup-params__month-name">Месяц</p>
+            </div>
+            <div class="choice-month-open">
+                <div class="choice-month-open__header">
+                    <p class="timesheet-popup-params__month-name">Месяц</p>
+                    <span class="timesheet-popup-params__year">2019</span>
+                    <span class="timesheet-popup-params__arrow-bottom"></span>
+                </div>
+                <table class="month-choice">
+                  <tr>
+                    <td class="month-choice__last">Янв</td>
+                    <td class="month-choice__last">Фев</td>
+                    <td class="month-choice__last">Март</td>
+                  </tr>
+                  <tr>
+                    <td class="month-choice__last">Апр</td>
+                    <td class="month-choice__last">Май</td>
+                    <td class="month-choice__last">Июнь</td>
+                  </tr>
+                  <tr>
+                    <td class="month-choice__last">Июль</td>
+                    <td class="month-choice__current">Авг</td>
+                    <td class="month-choice__next">Сент</td>
+                  </tr>
+                  <tr>
+                    <td class="month-choice__next">Окт</td>
+                    <td class="month-choice__next">Ноя</td>
+                    <td class="month-choice__next">Дек</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="timesheet-popup-button">
+            <button class="btn" type="button" >Очистить</button>
+            <button class="btn btn--orange" type="button">Выгрузить</button>
+          </div>
+      </div>
+    </div>
+    <div class="choice-status">
+      <div class="status-popup">
+          <div class="timesheet-popup-header">
+              <h3>Изменить статус</h3>
+              <span></span>
+          </div>
+          <p class="choice-status-person">Виноградов К.В.</p>
+          <div class="person-roles">
+
+            <input class="person-roles__input" type="checkbox" id="superposition">
+            <label class="person-roles__wrapper" for="superposition"><span></span>Совмещение</label>
+
+            <input class="person-roles__input" type="checkbox" id="probation">
+            <label class="person-roles__wrapper" for="probation"><span></span>Стажировка</label>
+
+            <input class="person-roles__input" type="checkbox" id="coaching">
+            <label class="person-roles__wrapper" for="coaching"><span></span>Тренинги</label>
+
+            <input class="person-roles__input" type="checkbox" id="education">
+            <label class="person-roles__wrapper" for="education"><span></span>Обучение</label>
+
+            <input class="person-roles__input" type="checkbox" id="certification">
+            <label class="person-roles__wrapper" for="certification"><span></span>Аттестация</label>
+          </div>
+          <div class="timesheet-popup-button">
+            <button class="btn" type="button" >Отменить</button>
+            <button class="btn btn--orange" type="button">Изменить</button>
+          </div>
+      </div>
+    </div>
+    <div class="first-screen">
+      <div class="header-wrapper">
+        <p class="header-logo">буше</p>
+          <div class="user">
+            <span class="user__initials"><p>СА</p></span>
+            <p class="user__name">Смирняков А.В.</p>
+          </div>
+        </div>
+        <div class="control-panel">
+          <div class="control-panel__wrapper">
+            <p>График подразделения №4</p>
+            <div class="control-wrapper">
+              <select class="unit">
+                <option class="unit__element">Подразделение №1</option>
+                <option class="unit__element">Подразделение №2</option>
+                <option class="unit__element">Подразделение №3</option>
+                <option class="unit__element">Подразделение №4</option>
+                <option class="unit__element">Подразделение №5</option>
+                <option class="unit__element">Подразделение №6</option>
+                <option class="unit__element">Подразделение №7</option>
+                <option class="unit__element">Подразделение №8</option>
+                <option class="unit__element">Подразделение №9</option>
+              </select>
+            <!--заглушка под календарь-->
+              <div class="calendar">
+                <span class="calendar__icon"></span>
+                <p class="calendar__month"><span class="calendar__month--bold">Август</span>, 2019</p>
+                    <div class="choice-month-open">
+                        <div class="choice-month-open__header">
+                            <p class="timesheet-popup-params__month-name">Август</p>
+                            <span class="timesheet-popup-params__year">2019</span>
+                            <span class="timesheet-popup-params__arrow-bottom"></span>
+                        </div>
+                        <table class="month-choice">
+                          <tr>
+                            <td class="month-choice__last">Янв</td>
+                            <td class="month-choice__last">Фев</td>
+                            <td class="month-choice__last">Март</td>
+                          </tr>
+                          <tr>
+                            <td class="month-choice__last">Апр</td>
+                            <td class="month-choice__last">Май</td>
+                            <td class="month-choice__last">Июнь</td>
+                          </tr>
+                          <tr>
+                            <td class="month-choice__last">Июль</td>
+                            <td class="month-choice__current">Авг</td>
+                            <td class="month-choice__next">Сент</td>
+                          </tr>
+                          <tr>
+                            <td class="month-choice__next">Окт</td>
+                            <td class="month-choice__next">Ноя</td>
+                            <td class="month-choice__next">Дек</td>
+                          </tr>
+                        </table>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <div class="actions-wrapper">
+            <div class="position-vector">
+              <p class="position-vector__name">Должность Я -> А</p>
+            </div>
+            <div class="position">
+              <p class="position-name">Выберите должность</p>
+              <div class="position-wrapper">
+                <p class="position-wrapper__title">Выберите должность</p>
+
+                <input type="checkbox" id="position">
+                <label for="position"><span></span>Проектировщик</label>
+
+                <input type="checkbox" id="admin-room">
+                <label for="admin-room"><span></span>Администратор зала</label>
+
+                <input type="checkbox" id="admin-pc">
+                <label for="admin-pc"><span></span>Администратор ПК</label>
+
+                <input type="checkbox" id="manager">
+                <label for="manager"><span></span>Управляющий залом</label>
+
+                <input type="checkbox" id="baker">
+                <label for="baker"><span></span>Пекарь</label>
+
+                <input type="checkbox" id="cleaning">
+                <label for="cleaning"><span></span>Уборщица</label>
+
+                <input type="checkbox" id="cashier">
+                <label for="cashier"><span></span>Кассир</label>
+
+                <input type="checkbox" id="waiter">
+                <label for="waiter"><span></span>Официант</label>
+
+                <input type="checkbox" id="waiter2">
+                <label for="waiter2"><span></span>Официант</label>
+
+                <input type="checkbox" id="waiter3">
+                <label for="waiter3"><span></span>Официант</label>
+              </div>
+            </div>
+            <div class="actions-control">
+            <button type="button" class="add-person">Сотрудник</button>
+            <button type="button" class="export">Экспорт</button>
+            <button type="button" class="refresh">Обновить</button>
+          </div>
+            <div class="interface-toggle">
+              <span class="interface-toggle__time-interval"></span>
+              <label class="interface-toggle__checkbox">
+                <input class="interface-toggle__input" type="checkbox">
+                <span class="interface-toggle__point"></span>
+              </label>
+              <span class="interface-toggle__hours-interval interface-toggle__hours-interval--active"></span>
+            </div>
+          </div>
+        </div>
+        <div class="first-screen-content">
+          <div class="first-screen-content-wrapper">
+          <div class="content-img-wrapper">
+            <img src="img/Group 97.svg">
+            <div class="first-screen-content-text">
+              <p>В этом подразделении еще нет сотрудников</p>
+              <button type="button" class="add-new-person">Добавить</p>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+    <article class="edit-time">
+      <div class="edit-time-wrapper">
+        <header class="edit-time__header">
+          <div>Дата</div>
+          <div class="presence">
+              <span class="presence-left">Присут.</span>
+              <label class="presence-toggle">
+              <input class="presence-toggle-input" type="checkbox">
+             </label>
+             <span class="presence-right">Отсут.</span>
+          </div>
+        </header>
+        <form action="" method="">
+           <label>
+             <input type="text" value="Начало">
+           </label>
+           <label>
+            <input type="text" value="Конец">
+          </label>
+          <label>
+            <input type="text" value="Перерыв">
+          </label>
+          <select>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </select>
+        </form>
+        <footer class="edit-time-footer">
+          <button class="btn" type="button">Очистить</button>
+          <button class="btn btn--orange" type="button">Сохранить</button>
+        </footer>
+      </div>
+    </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

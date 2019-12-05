@@ -1,0 +1,30 @@
+.presence {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.presence-toggle {
+  width: 34px;
+  height: 20px;
+  background: rgba(243, 181, 82, 0.2);
+  border-radius: 20px;
+  position: relative;
+}
+
+.presence-toggle-input {
+    opacity: 0;
+}
+
+.presence-toggle::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: #F3B552;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 100%;
+}

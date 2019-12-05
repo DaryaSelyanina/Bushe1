@@ -1,0 +1,87 @@
+.control-panel {
+    background-color: #E5E5E5;
+}
+
+.control-panel__wrapper {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.control-panel__wrapper p {
+  font-family: "Bushe Grotesque";
+}
+
+.control-wrapper {
+    display: flex;
+}
+
+.choice-month-open {
+    position: absolute;
+    display: none;
+}
+
+.unit {
+    margin: 0 20px;
+    border: 1px solid #E5E5E5;
+    padding: 10px 50px 10px 10px;
+    border-radius: 7px;
+}
+
+.calendar {
+    padding: 10px 40px;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
+.calendar__month--bold {
+    font-weight: bold;
+}
+
+.interface-toggle {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interface-toggle__time-interval {
+    background: url("../img/query_builder_24px.svg") no-repeat;
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.interface-toggle__hours-interval {
+    background: url("../img/Group 2.2.svg") no-repeat;
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.interface-toggle__checkbox {
+    width: 34px;
+    height: 20px;
+    background: rgba(243, 181, 82, 0.2);
+    border-radius: 20px;
+    position: relative;
+}
+
+.interface-toggle__checkbox input {
+    opacity: 0;
+}
+
+.interface-toggle__checkbox::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: #F3B552;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 100%;
+}
